@@ -40,13 +40,13 @@ mkdir -p
 
 ####################################################
 # ETAPE 11 - Génération des arbres
-## Outil - Iqtree
-	# echo " _________________________ 11 - Iqtree _______________________"
+# Outil - Iqtree
+	echo " _________________________ 11 - Iqtree _______________________"
 
-    # source /local/env/envconda.sh
-    # conda activate /groups/Paleogenomics/ENV/iqtree
+    source /local/env/envconda.sh
+    conda activate /groups/Paleogenomics/ENV/iqtree
 
-    # -m GTR2+G4+F -alrt 1000
+    -m GTR2+G4+F -alrt 1000
 
 # Options choisies:
 # * -s --> pour spécifier le nom du fichier d'alignement en input
