@@ -1,0 +1,1 @@
+Those two scripts are tests using two assembly softwares to try doing a de novo assembly in order to have no prior expectation of the studied specie. The data available was just too low to effectively recover enough data to build the assembly. 
