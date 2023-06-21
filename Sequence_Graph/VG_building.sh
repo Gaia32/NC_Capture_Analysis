@@ -33,7 +33,7 @@ conda activate /home/genouest/cnrs_umr6553/mahautgr/my_env/Vg
 	samtools coverage 1822_vg_mapped.sorted.bam > 1822_vg_samcoverage_mappedQ25.txt
 	samtools depth 1822_vg_mapped.sorted.bam > 1822_vg_samdepth_mapped.txt
 
-	echo -e "\n___________ 8 - VARIANT CALLING ___________"
+	echo -e "/n___________ 8 - VARIANT CALLING ___________"
 	source /local/env/envbcftools-1.9.sh
 	time bcftools mpileup -T "/groups/Paleogenomics/DOG/Adapters_&_SNIP/"4003.txt -C0 -B -A -f "/groups/dog/data/canFam3/sequence/bwa_index/Canis_familiaris.CanFam3.1.72.dna_sm.toplevel.fa" --threads 16 1822_vg_mapped.sorted.bam | bcftools call -m -o 1822_vg_mapped.sorted.vcf
 
@@ -67,3 +67,4 @@ conda activate /home/genouest/cnrs_umr6553/mahautgr/my_env/Vg
 
   # Generate a VCF from the support.  
   vg call 1.xg -k ${sample_tag}_mapped_nofilter.pack > ${sample_tag}_graph_calls_nofilter.vcf
+
