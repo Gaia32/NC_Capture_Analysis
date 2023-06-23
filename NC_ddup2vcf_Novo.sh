@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=NovCroc2
-#SBATCH --output=NovoIUPACmap_croc2.out
+#SBATCH --job-name=NovProcess
+#SBATCH --output=NovoProcessing.out
 #SBATCH --mem=100G
 #SBATCH --cpus-per-task=16
 
@@ -20,7 +20,7 @@ DirAln=$DirProjet/6_Novo_Aln/
 DirVcf=$DirProjet/7_Novo_VCF/
 
 # genome de ref
-GENOME=/groups/dog/data/canFam3/sequence/bwa_index/Canis_familiaris.CanFam3.1.72.dna_sm.toplevel.fa
+GENOME=(path/to/the/reference/genome/directory)
 DirSNIPS=(path/to/the/VCF/with/variants/directory)
 novocraft=(path/to/the/novoalign)
 novoutil=${novocraft}novoutil
