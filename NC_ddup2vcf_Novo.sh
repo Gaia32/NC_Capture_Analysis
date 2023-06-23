@@ -50,7 +50,7 @@ for file in ${DirDdup}*_rmduplicates.fastq.gz; do
  
     echo -e "\n___________ 6 - NovoAlign ___________"
     $novoalign -d /scratch/mahautgr/REF_GENOMES/CanFam3.1.72.IUPAC_TopCommonSNIPs.nix -f $DirDdup${sample_tag}_rmduplicates.fastq.gz -k --addM5 off -o BAM > $DirAln${sample_tag}_novo_mapped.bam
-    #OPTIONS -t 120 -g 30 -l 6 --addM5 off -o BAM
+    #OPTIONS --addM5 off -o BAM
     #-k to allow quality recalibration
     #if only one file in -f ==> SE mode
 
